@@ -39,12 +39,11 @@ tar xf taskwarrior-secrets-and-data.*.tgz
 **Now you're ready to go**  
 Now you can just run your task commands as usual:  
 ```bash
-uli@machine|~/projects/sit/schinzde/webtw-main
+uli@machine|~/
 ) task
 
-ID Age   Project        Tag  Recur Due    Until  Estimate Description                                                                                                                          Urg
- 1  7mo  Babashka       HOME        -7w                 0 Dokumentation durchlesen                                                                                                             15.8
-                                                            2023-05-14 https://practical.li/blog/posts/create-deps-new-template-for-clojure-cli-projects/ and https://github.com/babashka/neil
+ID Age   Project        Tag  Recur Due    Until  Estimate Description               Urg
+ 1  7mo  Babashka       HOME        -7w                 0 Dokumentation durchlesen  15.8
 <.... snip .....>
 151 tasks, truncated to 51 lines
 Context 'home' set. Use 'task context none' to remove.
