@@ -3,7 +3,7 @@
 **WARNING THIS IS ONLY A CONFIG FOR MY OWN FUN, MIGHT NOT WORK FOR YOU AT ALL**  
 
 This config is actively used by me. There is an encrypted file in this repository, which contains my personal settings for my taskd server at home.  
-Reach out, if you are really interested on these settings, or have a look at (Taskworrior docs)[https://taskwarrior.org/docs/].  
+Reach out, if you are really interested on these settings, or have a look at (https://taskwarrior.org/docs/)[Taskworrior docs].  
 
 ## Install
 
