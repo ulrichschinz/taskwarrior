@@ -1,0 +1,10 @@
+hooks
+backlog.data
+completed.data
+pending.data
+undo.data
+*.cert.pem
+*.key.pem
+taskrc
+taskrc.srv.inc
+taskwarrior-secrets-and-data*
