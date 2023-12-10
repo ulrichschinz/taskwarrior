@@ -1,6 +1,6 @@
 # taskwarrior
 
-### Configuration
+## Configuration
 
 Since taskwarrior keeps the current context in ~/.taskrc it makes the git-management unhandy and I wanted to avoid that.  
 For that reason the configfile has been split.  
@@ -15,6 +15,18 @@ Then link that file to your homedirectory. Given your configuration is in path `
 ```bash
 ln -s ~/.dotfiles/taskwarrior/taskrc ~/.taskrc
 ```
+
+### Special stuff
+
+As there is also configuration for my taskd server (containing secrets) and my whole data for tasks, I wanted to add it to the repository. So please ignore or do whatever you want to do with that gpg file in the repository.  
+
+#### Backup and Cleanup script
+
+As I'd like to keep my tasks data, keys and secrets, I created a little script to backup that data and encrypt it: `back_and_cleanup.sh`.  
+This way I can just keep it in my repository (you may warn me to do so, but relax, I already did ;) ).  
+
+
+### Config example
 
 Here is the configuration file content that was delivered with my default installation:
 
