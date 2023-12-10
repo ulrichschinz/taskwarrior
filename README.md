@@ -1,6 +1,11 @@
-# taskwarrior
+# Ulis Config For Taskwarrior
 
-## Configuration
+**WARNING THIS IS ONLY A CONFIG FOR MY OWN FUN, MIGHT NOT WORK FOR YOU AT ALL**  
+
+This config is actively used by me. There is an encrypted file in this repository, which contains my personal settings for my taskd server at home.  
+Reach out, if you are really interested on these settings, or have a look at (Taskworrior docs)[https://taskwarrior.org/docs/].  
+
+## Install
 
 Since taskwarrior keeps the current context in ~/.taskrc it makes the git-management unhandy and I wanted to avoid that.  
 For that reason the configfile has been split.  
@@ -16,15 +21,40 @@ Then link that file to your homedirectory. Given your configuration is in path `
 ln -s ~/.dotfiles/taskwarrior/taskrc ~/.taskrc
 ```
 
-### Special stuff
+Also link this repo to `~/.task`  
 
-As there is also configuration for my taskd server (containing secrets) and my whole data for tasks, I wanted to add it to the repository. So please ignore or do whatever you want to do with that gpg file in the repository.  
+```bash
+ln -s ~/.dotfiles/taskwarrior ~/.task
+```
+
+### Restore backup
+
+Unencrypt and unpack the secret configs:  
+
+```bash
+gpg -d taskwarrior-secrets-and-data.*.gpg
+tar xf taskwarrior-secrets-and-data.*.tgz
+```
+
+**Now you're ready to go**  
+Now you can just run your task commands as usual:  
+```bash
+uli@machine|~/projects/sit/schinzde/webtw-main
+) task
+
+ID Age   Project        Tag  Recur Due    Until  Estimate Description                                                                                                                          Urg
+ 1  7mo  Babashka       HOME        -7w                 0 Dokumentation durchlesen                                                                                                             15.8
+                                                            2023-05-14 https://practical.li/blog/posts/create-deps-new-template-for-clojure-cli-projects/ and https://github.com/babashka/neil
+<.... snip .....>
+151 tasks, truncated to 51 lines
+Context 'home' set. Use 'task context none' to remove.
+There are 13 local changes.  Sync required.
+```
 
 #### Backup and Cleanup script
 
 As I'd like to keep my tasks data, keys and secrets, I created a little script to backup that data and encrypt it: `back_and_cleanup.sh`.  
 This way I can just keep it in my repository (you may warn me to do so, but relax, I already did ;) ).  
-
 
 ### Config example
 
