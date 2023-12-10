@@ -7,4 +7,4 @@ undo.data
 *.key.pem
 taskrc
 taskrc.srv.inc
-taskwarrior-secrets-and-data*
+taskwarrior-secrets-and-data*.tgz
