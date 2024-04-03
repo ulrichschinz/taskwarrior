@@ -16,5 +16,5 @@ if [ ! -e $fname.$current_date.tgz ]; then
 fi
 
 if [ ! -e $fname.$current_date.tgz.gpg ]; then
-  gpg -a -r D49BFC90C3276F020FAE37C2EC5B4158D892A9CD -o $fname.$current_date.tgz.gpg -e $fname.$current_date.tgz 
+  gpg -a -r 7D4A9961EEE46114B117C823A303A01076F41D46 -o $fname.$current_date.tgz.gpg -e $fname.$current_date.tgz 
 fi
