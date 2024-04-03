@@ -1,10 +1,12 @@
 hooks
+*.sqlite
 backlog.data
 completed.data
 pending.data
 undo.data
 *.cert.pem
 *.key.pem
+*.sqlite3
 taskrc
 taskrc.srv.inc
 taskwarrior-secrets-and-data*.tgz

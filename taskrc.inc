@@ -1,7 +1,7 @@
 # path where your taskwarrior data is
 data.location=~/.task
 
-news.version=2.6.0
+news.version=3.0.0
 
 # Context definitions
 context.work.read=-MAYBE +WORK or +ANY
@@ -28,13 +28,13 @@ report.next.columns=id,start.age,entry.age,depends,priority,project,tags,recur,s
 
 
 # taskd server configuration
-taskd.server=taskd.schinz.de:53589
-taskd.credentials=schinz.de\/Ulrich Schinz\/286f715b-86ec-4fce-8f84-294fac490f12
-taskd.certificate=\/home\/uli\/.task\/Ulrich_Schinz.cert.pem
-taskd.key=\/home\/uli\/.task\/Ulrich_Schinz.key.pem
-taskd.ca=\/home\/uli\/.task\/ca.cert.pem
-taskd.trust=strict
-taskd.ciphers=NORMAL
+# taskd.server=taskd.schinz.de:53589
+# taskd.credentials=schinz.de\/Ulrich Schinz\/286f715b-86ec-4fce-8f84-294fac490f12
+# taskd.certificate=\/home\/uli\/.task\/Ulrich_Schinz.cert.pem
+# taskd.key=\/home\/uli\/.task\/Ulrich_Schinz.key.pem
+# taskd.ca=\/home\/uli\/.task\/ca.cert.pem
+# taskd.trust=strict
+# taskd.ciphers=NORMAL
 
 # urgency settings
 # urgency.blocking.coefficient=0

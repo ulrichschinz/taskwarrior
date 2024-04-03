@@ -12,7 +12,7 @@ for file in $(find . -type f -name "$file_pattern"); do
   fi
 done
 if [ ! -e $fname.$current_date.tgz ]; then
-  tar czfv $fname.$current_date.tgz hooks taskrc.srv.inc *.pem *.data
+  tar czfv $fname.$current_date.tgz hooks *.sqlite3
 fi
 
 if [ ! -e $fname.$current_date.tgz.gpg ]; then
