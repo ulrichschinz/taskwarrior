@@ -32,8 +32,7 @@ ln -s ~/.dotfiles/taskwarrior ~/.task
 Unencrypt and unpack the secret configs:  
 
 ```bash
-gpg -d taskwarrior-secrets-and-data.*.gpg
-tar xf taskwarrior-secrets-and-data.*.tgz
+FNB=taskwarrior-secrets-and-data; FDA=$(echo *.gpg | grep -oE '[0-9]{8}'); gpg -d *.gpg > ${FNB}.${FDA}.tgz; tar xf ${FNB}.${FDA}.tgz; FNB=; FDA=;
 ```
 
 **Now you're ready to go**  
